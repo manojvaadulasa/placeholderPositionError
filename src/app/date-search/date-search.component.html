@@ -1,0 +1,27 @@
+<section class="search-filter-po">
+  <div class="search-top-po">
+    <div class="fliter-po" >
+      <mat-icon id="PendingTaskBackSpace" role="img" class="left-arrow"
+                aria-hidden="true" data-mat-icon-type="font" (click)="back()">keyboard_backspace
+      </mat-icon>
+    </div>
+  </div>
+  <form [formGroup]="forms">
+    <div class="row">
+      <div class="col-md-12 search-row">
+        <span class="d-flex justify-content-center">Creation Date</span>
+        <mat-form-field class="set-width">
+          <div class="date_container">
+            <mat-date-range-input [rangePicker]="picker" viewEncapsulation="None">
+              <input matStartDate formControlName="from" placeholder="Start Date">
+              <input matEndDate formControlName="to" placeholder="End Date">
+            </mat-date-range-input>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-date-range-picker #picker></mat-date-range-picker>
+          </div>
+        </mat-form-field>
+      </div>
+
+    </div>
+  </form>
+</section>

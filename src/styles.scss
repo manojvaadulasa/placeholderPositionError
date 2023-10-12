@@ -1,0 +1,130 @@
+/* You can add global styles to this file, and also import other style files */
+.search-filter-po{
+  font-family:'Lato', sans-serif;
+  // display: none;
+  margin-right:-341px;
+  // overflow-y: scroll;
+  width: 340px;
+  height: auto;
+  float: right;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  background: #fff;
+  padding: 15px;
+  border-left: 1px solid #D0DCE1;
+  height: 93vh;
+  margin-top:54px;
+  transition: ease-in-out .25s;
+  @media (max-width: 768px ) {
+    width: 300px !important;
+    margin-top: 101px !important;
+  }
+  .form-control{
+    color: #C8CED3;font-family:'Lato', sans-serif;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #C8CED3;
+    opacity: 1; /* Firefox */font-family:'Lato', sans-serif;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:#C8CED3;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #C8CED3;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  .search-row {
+    padding-top: 15px;
+    span{
+      color: #73888F;
+      font-weight: 400;
+    }
+  }
+  .search-top-po{
+    border-bottom: 2px solid #D0DCE1;
+    display: flex;
+    padding-bottom: 10px;
+    i{
+      font-size: 20px;
+    }
+    .fliter-po {
+      width: 50%;
+      font-size: 19px;
+      .left-arrow{
+        cursor: pointer;
+        margin-top: 3px;
+        float: left;
+        margin-right: 4px;
+      }
+
+
+    }
+    .apply-fliter-refresh{
+      width: 50%;
+      text-align: right;
+      a{
+        i{
+          color: #20A8D8;
+          line-height: 30px;
+          padding-right: 9px;
+        }
+      }
+      button{
+        background-color: #20A8D8;
+        color: #fff;
+        margin-left: 5px;
+        float: right;
+      }
+    }
+  }
+}
+.search-filter-box-display {
+  transition: ease-in-out .25s;
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert(0.7);
+}
+.filter-search-sidebar .search-filter-box-display {
+
+  margin-right: 331px;
+
+  transition: ease-in-out .25s;
+
+
+
+}
+
+.filter-search-sidebar  .search-filter-po {
+
+  margin-right: 0 !important;
+
+  transition: ease-in-out .25s;
+
+
+
+}
+
+.filter-search-sidebar .po-cardbody .po-cards .col-md-4{
+
+  max-width: 50% !important;
+
+  flex: 0 0 50% !important;
+
+}
+
+.filter-search-sidebar .po-cardbody .po-cards .col-md-6{
+
+  max-width: 100% !important;
+
+  flex: 0 0 100% !important;
+
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
